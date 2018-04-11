@@ -25,9 +25,3 @@ class Mage(Entity):
         target._max_hp += increase
         print("{} max health increased by {} HP".format(target._name, increase))
 
-class first_boss_dragon(Dragon):
-    
-
-    # is there a way to make dragon invicible to physical attacks?  Not sure how to sense other methods that impact this instance
-    def fly(self):
-        pass

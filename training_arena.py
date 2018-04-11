@@ -37,3 +37,6 @@ print("{}'s Buffed Strength = {}, Defense = {}, Mind = {}".format(conan._name, c
 baby_dragon = Dragon("baby_dragon", 200,30,15,15,15)
 baby_dragon.fly()
 conan.physical_attack([baby_dragon])
+conan.level
+conan.inventory
+conan.on_ground
