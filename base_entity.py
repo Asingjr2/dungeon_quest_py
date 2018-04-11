@@ -18,6 +18,7 @@ class Entity:
         self._magic = mag
         self._mind = mind 
         self._luck = luck
+        self.on_ground = "YES"
 
     @property
     def current_hp(self):
@@ -51,7 +52,10 @@ class Entity:
 
         for target in targets:
             if target.is_alive:
-                damage = (self._strength - target.defense)
+                if target.on_ground == "NO":
+                    print("{} cannot be hit with physical attacks".format(target._name))
+                    return None
+                damage = (self._strength - target._defense)
                 rand_val = random.randint(0, 100)
                 # cool way to implement luck concept
                 if self._luck > rand_val:
@@ -69,6 +73,10 @@ class Dragon:
         self._current_mp= mp
         self._strength= str_
         self._defense = def_
+        self.on_ground = "YES"
+
+    def fly(self):
+        self.on_ground = "NO"
 
         
     @property
@@ -91,7 +99,7 @@ class Dragon:
 
         for target in targets:
             if target.is_alive:
-                damage = (self._strength - target.defense)
+                damage = (self._strength - target._defense)
                 rand_val = random.randint(0, 100)
                 target.take_damage(damage)
 

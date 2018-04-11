@@ -1,0 +1,11 @@
+""" File captures current creations and ideas to work on"""
+
+Created Following Class:
+    Base
+    Hero
+    Enemy
+    Equipment
+
+Find python packages that would help with the structure for game
+
+Identify way to activate all class functions at once or creating a way to do that easily
