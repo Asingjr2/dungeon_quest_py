@@ -80,6 +80,8 @@ class Entity:
 
                 target.take_damage(damage)
 
+    # Build function for equip that adds performs all buffs at time that I equip item
+
     
 class AerialCreature:
     def __init__(self):
