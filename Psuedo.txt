@@ -9,3 +9,5 @@ Created Following Class:
 Find python packages that would help with the structure for game
 
 Identify way to activate all class functions at once or creating a way to do that easily
+
+CYCLOPS
