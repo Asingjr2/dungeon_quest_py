@@ -102,7 +102,6 @@ class Dragon(AerialCreature):
         self._defense = def_
         self.on_ground = "YES"
 
-        
     @property
     def is_alive(self):
         return self._current_hp > 0

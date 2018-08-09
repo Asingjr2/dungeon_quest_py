@@ -6,6 +6,7 @@ class Enemy(Entity):
 
 
 class Troll(Entity):
+    """ Low level enemy type."""
     
     # Why will below not work with @property 
     def shriek(self):

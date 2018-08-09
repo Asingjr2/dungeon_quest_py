@@ -41,12 +41,6 @@ class HeavyArmor(Armor):
         print("{} strength incresed to {}".format(target._name, target._strength))
 
 
-class Hat:
-    """ Equipment that alters mind attr. """
-    def __init__(self):
-        pass
-
-
 class Cap(Hat):
     """ Moderately increase mind of target. """
     def __init__(self):
@@ -56,3 +50,4 @@ class Cap(Hat):
         """ Increase target mind by .10. """
         target._mind += round(self.add_mind * target._mind)
         print("{} mind increased to {}".format(target._name, target._mind))
+
