@@ -6,7 +6,7 @@ class Human(object):
     
     Attributes include name, health, magic, strength, defense, intelligence, and luck.
     Methods include checks for living, being on the ground, and description
-    of all character stats.
+    of character stats.
     """
     def __init__(self, name, hp, mp, str_, def_, intel=0, luck=0):
         self.name = name
